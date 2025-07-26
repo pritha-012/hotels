@@ -3,7 +3,7 @@ const router=express.Router();
 const Person=require('./../models/person');
 
 router.post('/',async(req,res) => {
-    console.log("POST /menu hit");
+    console.log("POST /person hit");
     try{
         const data=req.body;
         const newPerson=new Person(data);
